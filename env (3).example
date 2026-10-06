@@ -1,0 +1,17 @@
+# Скопируйте в .env (локально) или добавьте эти же переменные в панели Bothost.
+# Реальные значения в репозиторий НЕ коммитьте.
+
+BOT_TOKEN=123456:ABC-your-token-from-BotFather
+CHANNEL_ID=@your_channel
+ADMIN_IDS=123456789
+
+# Необязательно:
+# ALLOWED_IDS=111111111,222222222
+# COUNTER_START=0
+# BOT_NAME=Topoff DM
+# MODE_NAME=ДМ
+# MAPS=Sandstone,Province,Rust,Zone 9,Breeze,Hanami,Dune,Sakura
+# WEAPONS=калаш,калаш БЕЗ ОБНОВЫ,M4,АВМ,USP,Любое
+# DAMAGES=Только ХС,Любой
+# MINUTES=5,10,15,20
+# DATA_FILE=data.json
