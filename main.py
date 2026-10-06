@@ -89,10 +89,10 @@ ALLOWED_IDS = _ids("ALLOWED_IDS")  # постоянный список с дос
 COUNTER_START = int(os.getenv("COUNTER_START", "0"))  # с какого номера продолжить лобби
 BOT_NAME = os.getenv("BOT_NAME", "Topoff DM")  # имя бота: в меню и в профиле Telegram
 MODE = os.getenv("MODE_NAME", "ДМ")
-MAPS = _list("MAPS", "Sandstone,Province,Rust,Zone 9,Breeze,Hanami,Dune,Sakura")
+MAPS = _list("MAPS", "Sandstone,Province,Rust,Zone 9,Breeze,Sakura")
 WEAPONS = _list("WEAPONS", "калаш,калаш БЕЗ ОБНОВЫ,M4,АВМ,USP,Любое")
 DAMAGES = _list("DAMAGES", "Только ХС,Любой")
-MINUTES = [int(x) for x in _list("MINUTES", "5,10,15,20")]
+MINUTES = [int(x) for x in _list("MINUTES", "5,10,15,20,30,60")]
 DATA_FILE = Path(os.getenv("DATA_FILE", "data.json"))
 
 BOT_USERNAME = ""
