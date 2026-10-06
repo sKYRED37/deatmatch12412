@@ -51,8 +51,8 @@ def _ids(name: str) -> set[int]:
     return {int(x) for x in os.getenv(name, "").replace(" ", "").split(",") if x.lstrip("-").isdigit()}
 
 
-BOT_TOKEN = _env("8838274028:AAGeEdgvolNZ-WQmkTg-rzpSUvhlM7G0_-A")
-CHANNEL_ID = _env("-1003765430611")  # @username канала или -100...
+BOT_TOKEN = _env("8838274028:AAGeEdgvolNZ-WQmkTg-rzpSUvhlM7G0_-A","8838274028:AAGeEdgvolNZ-WQmkTg-rzpSUvhlM7G0_-A")
+CHANNEL_ID = _env("-1003765430611","-1003765430611")  # @username канала или -100...
 if not BOT_TOKEN or not CHANNEL_ID:
     raise SystemExit("Не заданы BOT_TOKEN и CHANNEL_ID (переменные окружения или файл .env)")
 ADMIN_IDS = _ids("1766395031")      # владельцы: доступ всегда, выдают доступ другим
