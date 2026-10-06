@@ -13,6 +13,6 @@ ADMIN_IDS=1766395031
 MODE_NAME=ДМ
 # Варианты кнопок через запятую (необязательно)
 # WEAPONS=калаш,калаш БЕЗ ОБНОВЫ,M4,АВМ,USP,Любое
-# MAPS=Sandstone,Province,Rust,Zone 9,Breeze,Hanami,Dune,Sakura
+# MAPS=Sandstone,Province,Rust,Zone 9,Breeze,Sakura
 # DAMAGES=Только ХС,Любой
 # MINUTES=5,10,15,20,30,60
