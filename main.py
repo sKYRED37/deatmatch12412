@@ -51,19 +51,19 @@ def _ids(name: str) -> set[int]:
     return {int(x) for x in os.getenv(name, "").replace(" ", "").split(",") if x.lstrip("-").isdigit()}
 
 
-BOT_TOKEN = _env("BOT_TOKEN", "TOKEN")
-CHANNEL_ID = _env("CHANNEL_ID", "CHAT_ID")  # @username канала или -100...
+BOT_TOKEN = _env("8838274028:AAGeEdgvolNZ-WQmkTg-rzpSUvhlM7G0_-A")
+CHANNEL_ID = _env("-1003765430611")  # @username канала или -100...
 if not BOT_TOKEN or not CHANNEL_ID:
     raise SystemExit("Не заданы BOT_TOKEN и CHANNEL_ID (переменные окружения или файл .env)")
-ADMIN_IDS = _ids("ADMIN_IDS")      # владельцы: доступ всегда, выдают доступ другим
-ALLOWED_IDS = _ids("ALLOWED_IDS")  # постоянный список с доступом (не пропадает при перезапуске)
+ADMIN_IDS = _ids("1766395031")      # владельцы: доступ всегда, выдают доступ другим
+ALLOWED_IDS = _ids("1766395031")  # постоянный список с доступом (не пропадает при перезапуске)
 COUNTER_START = int(os.getenv("COUNTER_START", "0"))  # с какого номера продолжить лобби
 BOT_NAME = os.getenv("BOT_NAME", "Topoff DM")  # имя бота: в меню и в профиле Telegram
 MODE = os.getenv("MODE_NAME", "ДМ")
-MAPS = _list("MAPS", "Sandstone,Province,Rust,Zone 9,Breeze,Hanami,Dune,Sakura")
+MAPS = _list("MAPS", "Sandstone,Province,Rust,Zone 9,Breeze,Sakura")
 WEAPONS = _list("WEAPONS", "калаш,калаш БЕЗ ОБНОВЫ,M4,АВМ,USP,Любое")
 DAMAGES = _list("DAMAGES", "Только ХС,Любой")
-MINUTES = [int(x) for x in _list("MINUTES", "5,10,15,20")]
+MINUTES = [int(x) for x in _list("MINUTES", "5,10,15,20,30,60")]
 DATA_FILE = Path(os.getenv("DATA_FILE", "data.json"))
 
 BOT_USERNAME = ""
