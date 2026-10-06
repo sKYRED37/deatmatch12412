@@ -1,0 +1,8 @@
+# Скопируйте в .env для запуска у себя. На bothost те же значения вводятся в разделе «Переменные окружения».
+BOT_TOKEN=123456:ABC...          # токен от @BotFather
+CHANNEL_ID=@your_channel         # @username канала или -100XXXXXXXXXX (бот должен быть админом канала)
+ADMIN_IDS=111111111,222222222    # Telegram ID владельцев (узнать: @userinfobot)
+ALLOWED_IDS=                     # ID с постоянным доступом (переживает перезапуск и очистку диска)
+COUNTER_START=0                  # с какого номера продолжить лобби после очистки данных
+BOT_NAME=Topoff DM
+DATA_FILE=data.json              # на платном тарифе укажите путь на постоянном томе, например /data/data.json
